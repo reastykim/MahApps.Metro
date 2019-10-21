@@ -67,6 +67,9 @@
                                         Style="{DynamicResource ChromelessButtonStyle}"
                                         Visibility="Collapsed">
                                     <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="PreviewMouseDown">
+                                            <Actions:EventToCommandAction Command="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ClosingTabCommand}" />
+                                        </i:EventTrigger>
                                         <i:EventTrigger EventName="Click">
                                             <Actions:CloseTabItemAction Command="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CloseTabCommand}" CommandParameter="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CloseTabCommandParameter}" />
                                         </i:EventTrigger>

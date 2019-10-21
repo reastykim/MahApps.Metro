@@ -1,6 +1,10 @@
-﻿using System.Windows;
+﻿using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using static MahApps.Metro.Controls.BaseMetroTabControl;
 
 namespace MahApps.Metro.Controls
 {
@@ -27,6 +31,20 @@ namespace MahApps.Metro.Controls
         {
             get { return (bool)GetValue(CloseButtonEnabledProperty); }
             set { SetValue(CloseButtonEnabledProperty, value); }
+        }
+
+        public static readonly DependencyProperty ClosingTabCommandProperty =
+            DependencyProperty.Register("ClosingTabCommand",
+                                        typeof(ICommand),
+                                        typeof(MetroTabItem));
+
+        /// <summary>
+        /// Gets/sets the command that is executed when any mouse button is pressed while the pointer is over Close Button.
+        /// </summary>
+        public ICommand ClosingTabCommand
+        {
+            get { return (ICommand)GetValue(ClosingTabCommandProperty); }
+            set { SetValue(ClosingTabCommandProperty, value); }
         }
 
         public static readonly DependencyProperty CloseTabCommandProperty =

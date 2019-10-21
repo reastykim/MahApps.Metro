@@ -21,9 +21,9 @@ using System.Windows.Markup;
 [assembly: AssemblyDescription("A toolkit for creating Metro / Modern UI styled WPF apps.")]
 [assembly: AssemblyCompany("MahApps")]
 
-[assembly: AssemblyVersion("1.6.0.0")]
-[assembly: AssemblyFileVersion("1.6.0.0")]
-[assembly: AssemblyInformationalVersion("1.6.0.0")]
+[assembly: AssemblyVersion("1.6.5.1")]
+[assembly: AssemblyFileVersion("1.6.5.1")]
+[assembly: AssemblyInformationalVersion("1.6.5.1")]
 [assembly: AssemblyProduct("MahApps.Metro")]
 
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("WpfAnalyzers.DependencyProperty", "WPF0005:Name of PropertyChangedCallback should match registered name.")]

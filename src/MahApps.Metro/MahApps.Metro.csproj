@@ -6,6 +6,7 @@
         <AssemblyName>MahApps.Metro</AssemblyName>
         <RootNamespace>MahApps.Metro</RootNamespace>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReleaseNotes>Fixed TabItemClosingEvent Bug</PackageReleaseNotes>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System.ComponentModel.DataAnnotations" />
